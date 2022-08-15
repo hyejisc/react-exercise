@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 import store from "./redux/store";
 
 import "./App.css";
+import Display from "./components/Display";
 
 // const DUMMY_EXPENSES = [
 //   {
@@ -46,6 +47,7 @@ const App = () => {
     <Provider store={store}>
       <div className="App">
         <Subscribers />
+        <Display />
       </div>
     </Provider>
   );
