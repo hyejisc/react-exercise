@@ -2,6 +2,8 @@ import React, { useState } from "react";
 // import Expenses from "./components/Expenses/Expenses";
 // import NewExpense from "./components/NewExpense/NewExpense";
 import Subscribers from "./components/Subscribers";
+import User from "./exercise/User";
+import UserList from "./exercise/UserList";
 import { Provider } from "react-redux";
 import store from "./redux/store";
 
@@ -40,16 +42,20 @@ const App = () => {
   // };
 
   return (
-    // <div>
-    //   <NewExpense onAddExpense={addExpenseHanlder} />
-    //   <Expenses items={expenses} />
-    // </div>
-    <Provider store={store}>
-      <div className="App">
-        <Subscribers />
-        <Display />
+    <div>
+      {/* <div>
+         <NewExpense onAddExpense={addExpenseHanlder} />
+         <Expenses items={expenses} />
       </div>
-    </Provider>
+      <Provider store={store}>
+        <div className="App">
+         <Subscribers />
+          <Display />
+        </div>
+      </Provider> */}
+      <User />
+      <UserList />
+    </div>
   );
 };
 
