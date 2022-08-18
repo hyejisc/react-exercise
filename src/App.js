@@ -3,7 +3,7 @@ import React, { useState } from "react";
 // import NewExpense from "./components/NewExpense/NewExpense";
 import Subscribers from "./components/Subscribers";
 import User from "./exercise/User";
-import UserList from "./exercise/UserList";
+
 import { Provider } from "react-redux";
 import store from "./redux/store";
 
@@ -54,7 +54,6 @@ const App = () => {
         </div>
       </Provider> */}
       <User />
-      <UserList />
     </div>
   );
 };

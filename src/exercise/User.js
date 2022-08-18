@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import UserList from "./UserList";
 
 const User = () => {
   const [name, setName] = useState("");
@@ -18,6 +19,8 @@ const User = () => {
       <input type="text" onChange={nameHandler} />
       <h2>Age(Years)</h2>
       <input type="number" onChange={ageHandler} />
+
+      <UserList name={name} age={age} />
     </div>
   );
 };
